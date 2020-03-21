@@ -34,7 +34,7 @@
                     <li><a href="https://docs.firefly-iii.org/support/telemetry">The pages about telemetry</a></li>
                 </ul>
             </li>
-            <li><a href="#">The Firefly III telemetry endpoint source code</a></li>
+            <li><a href="http://github.com/firefly-iii/telemetry">The Firefly III telemetry endpoint source code</a></li>
         </ul>
     </div>
 </main>

@@ -63,10 +63,13 @@ class TelemetryController extends Controller
         }
         /*
          * Store whatever the user submitted as a new entry.
+         * IP salt is a sanity check. Don't really care about the IP, but consistent mismatch / changes
+         * in IP vs. installation ID might be something to look for.
          */
         $submission             = new Submission;
         $submission->uuid       = $uuid;
         $submission->user_agent = $userAgent;
+        $submission->ip_hash    = hash('sha256', sprintf('%s-%s', $request->ip(), config('telemetry.ip_salt')));
         $submission->json       = $body;
         try {
             $submission->save();

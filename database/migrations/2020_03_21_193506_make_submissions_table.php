@@ -34,6 +34,7 @@ class MakeSubmissionsTable extends Migration
             $table->softDeletes();
             $table->string('uuid');
             $table->string('user_agent');
+            $table->string('ip_hash');
             $table->longText('json');
         }
         );

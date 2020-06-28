@@ -8,4 +8,4 @@ I am always interested in expanding Firefly III's many features. Just open a tic
 
 ## Pull requests
 
-When contributing to Firefly III telemetry, please first discuss the change you wish to make via issue, email, or any other method. I can only accept pull requests against the `develop` branch, never the `master` branch.
+When contributing to Firefly III telemetry, please first discuss the change you wish to make via issue, email, or any other method. I can only accept pull requests against the `develop` branch, never the `main` branch.
